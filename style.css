@@ -1,0 +1,97 @@
+/* general styling */
+
+/* Stjärnan precis här nedan används för att styla alla taggar på hela hemsidan - använd med försiktighet (eller inte och se roliga konsekvenser) */
+* {
+   margin-inline: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+*:active > * {
+   outline: 1px dotted red;
+}
+
+body {
+   font-family: 'Roboto Slab', serif;
+   background: #f3f2f2;
+   margin: 0;
+}
+
+.showgrid:hover {
+cursor: pointer;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: hotpink;
+   padding: .2rem 2rem;
+}
+
+.primary-navigation {
+   display: flex;
+   gap: 2rem;
+   list-style: none;
+}
+
+.grid-layout {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 3rem;
+   margin-top: 2rem;
+   width: 70%;
+   margin-inline: auto;
+} 
+
+
+/* text styling */
+
+.logo-text, h1, h2, h3, h4, h5, h6 {
+   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.logo-text {
+   color: white;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+p {
+   line-height: 1.5;
+}
+
+ol {
+   line-height: 1.5;
+}
+
+/* image styling */
+
+img {
+   display: block;
+   max-width: 100%;
+   border-radius: 16px;
+}
+
+
+/* link styling */
+
+a, a:visited {
+   color: white;
+   font-weight: 500;
+   text-decoration: none;
+   font-size: 1.125rem;
+ 
+}
+
+
+a:hover {
+   color: blueviolet;
+   
+}
+
+a:active {
+   color: rgb(59, 9, 105);
+
+}
+
