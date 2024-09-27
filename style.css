@@ -54,9 +54,8 @@ nav {
 .grid-layout {
    display: grid;
    grid-template-columns: 1fr 1.618fr;
-   gap: 1rem;
    margin-top: 2rem;
-   
+   gap: 0.5rem;
    width: 60%;
    margin-inline: auto;
 } 
@@ -87,7 +86,6 @@ footer > div:last-child{
 }
 
 footer nav ul {
-
    padding-left: 0;
 }
 
@@ -113,9 +111,16 @@ h1 {
 }
 
 p {
+   
    line-height: 1.618;
    color: #3a3a3a;
 }
+
+
+.grid-layout div p {
+   margin-top:0;
+}
+
 
 li {
    line-height: 1.618;
