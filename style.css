@@ -12,9 +12,10 @@ body {
    font-family: 'Roboto Slab', serif;
    background: #f3f2f2;
    margin: 0;
+   font-size: 1.125em;
 }
 
-header {
+header, footer {
   
    background: hotpink;
    padding: .2rem 2rem;
@@ -24,7 +25,7 @@ nav {
    display: flex;
    gap: 1.5rem;
 
-   justify-content:space-between;
+   justify-content: space-between;
    align-items: center;
 
 }
@@ -32,7 +33,6 @@ nav {
 .flex-layout {
    display: flex;
    gap: 1rem;
-
    align-items: center;
 }
 
@@ -43,13 +43,52 @@ nav {
    white-space: nowrap;
 }
 
+.footer-navigation {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap: 1rem;
+   list-style: none;
+}
+
 .grid-layout {
    display: grid;
    grid-template-columns: 1fr 1.618fr;
+   gap: 1rem;
    margin-top: 2rem;
-   width: 70%;
+   width: 60%;
    margin-inline: auto;
 } 
+
+.grid-layout > div {
+   margin-bottom: 2rem;
+}
+
+footer {
+   height: 30vh;
+}
+
+.footer-layout {
+   display: flex;
+   
+   justify-content: space-between;
+   align-items:flex-start;
+
+   margin-top: auto;
+}
+
+footer > .flex-layout {
+   flex-basis: 33%;
+}
+
+footer > div:last-child{
+   flex-basis: 33%;
+}
+
+footer nav ul {
+
+   padding-left: 0;
+}
 
 .grid-col-span-2 {
    grid-column: span 2;
@@ -68,11 +107,16 @@ nav {
 }
 
 p {
-   line-height: 1.5;
+   line-height: 1.618;
 }
 
-ol {
-   line-height: 1.5;
+li {
+   line-height: 1.618;
+   margin-bottom: 0.5rem;
+}
+
+section {
+   margin-bottom: 6rem;
 }
 
 /* image styling */
@@ -93,7 +137,7 @@ img {
 /* link styling */
 
 a:link, a:visited {
-   color: blueviolet;
+   color: white;
    font-weight: 500;
    text-decoration: none;
    font-size: 1.125rem;
@@ -101,7 +145,7 @@ a:link, a:visited {
 }
 
 a:hover {
-   color: rgb(202, 14, 202);
+   color: rgb(45, 25, 226);
    text-decoration: underline;
    
 }
@@ -111,3 +155,6 @@ a:active {
 
 }
 
+.inline-link, .inline-link:visited{
+   color:darksalmon;
+}

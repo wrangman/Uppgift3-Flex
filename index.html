@@ -28,18 +28,18 @@
             <li><a class="nav-link" href="#">Hem</a></li>
             <li><a class="nav-link" href="#">Produkter</a></li>
             <li><a class="nav-link" href="#">Om oss</a></li>
-
          </ul>
+
       </nav>
    </header>
    <main>
-      <section>
+      <section class="grid-layout">
          <div>
             <h1>Ska jag använda Flexbox eller CSS Grid?</h1>
             <p>
                Flexbox och CSS Grid är två metoder för att bygga upp en layout med CSS. De jämförs ofta med varandra,
                trots att det är ganska stor skillnad mellan Flexbox och CSS Grid. I det här inlägget delar jag med mig
-               av fördelar och nackdelar med de båda metoderna. <a
+               av fördelar och nackdelar med de båda metoderna. <a class="inline-link"
                   href="https://whitespace.se/blogg/ska-jag-anvanda-flexbox-eller-css-grid/">Läs mer här</a>.
             </p>
             <p>
@@ -84,8 +84,23 @@
 
       </section>
    </main>
-   <footer>
+   <footer class="footer-layout">
       <!-- sidfot - det som ska vara längst ned på sidan t.ex. länkar och en logo -->
+         
+      <div class="flex-layout">
+         <img class="logo" src="img/froggy.webp" alt="logo">
+         <p class="main-title">Flexbox</p>
+      </div>
+      
+      <nav>
+         <ul class="primary-navigation">
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="#">Om oss</a></li>
+         </ul>
+      </nav>
+
+      <div></div>
    </footer>
 </body>
 

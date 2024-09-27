@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flex & Grid</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="flex-layout">
+                <img class="logo" src="img/froggy.webp" alt="logo">
+                <p class="main-title">Flexbox
+            </div>
+            <ul class="primary-navigation">
+                <li><a href="#">Hem</a></li>
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Om oss</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!-- TODO: fixa allt här för fin layout med grid - glöm inte praxis! hur gör man med text och rubriker i html? -->
+            Ska jag använda Flexbox eller CSS Grid?
+                
+            Flexbox och CSS Grid är två metoder för att bygga upp en layout med CSS. De jämförs ofta med varandra,
+            trots att det är ganska stor skillnad mellan Flexbox och CSS Grid. I det här inlägget delar jag med mig
+            av fördelar och nackdelar med de båda metoderna. <a href="https://whitespace.se/blogg/ska-jag-anvanda-flexbox-eller-css-grid/">Läs mer här</a>.
+                 
+            PS: Om du håller ned musknappen t.ex. vid menyn här ovan ser du strukturen på sidan - det kanske hjälper
+            dig att se hur sidan är uppbyggd.
+            
+            För- &amp; nackdelar med Flexbox
+           
+            Flexbox är bra för att strukturera innehållet (rubriker, stycken, länkar m.m.) i olika element
+            (containers, sidhuvud, brödtext, m.m.)
+            Bra för endimensionella element, det vill säga element som ska riktas åt ett håll. Flexbox bör
+            användas om man vill skapa element som antingen är på en rad eller i en kolumn.
+            Flexbox är inte det bästa valet för tvådimensionella element.
+            Med Flexbox skriver man mindre kod än med CSS Grid.
+        
+            För- &amp; nackdelar med CSS Grid
+            Bra för att strukturera layouten på element på en sida
+            Bra för tvådimensionella element. CSS Grid bör användas om man vill skapa element som är både en rad och en kolumn. Mindre bra för endimensionella element.
+         
+            CSS Grid kan vara förvirrande på grund av dess tvådimensionalitet som du kan påverka med CSS-egenskaperna
+            grid-column och grid-row. Jag brukar tänka så här:
+            Bra för att strukturera layouten på element på en sida
+            Bra för tvådimensionella element. CSS Grid bör användas om man vill skapa element som är både en rad
+            och en kolumn.
+            Mindre bra för endimensionella element.
+    </main>
+    <footer>
+
+        <!-- TODO: sidfot - det som ska vara längst ned på sidan t.ex. länkar och en logo -->
+    </footer>
+</body>
+</html>
