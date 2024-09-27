@@ -10,7 +10,7 @@
 
 body {
    font-family: 'Roboto Slab', serif;
-   background: #f3f2f2;
+   background: #fafafa;
    margin: 0;
    font-size: 1.125em;
 }
@@ -56,6 +56,7 @@ nav {
    grid-template-columns: 1fr 1.618fr;
    gap: 1rem;
    margin-top: 2rem;
+   
    width: 60%;
    margin-inline: auto;
 } 
@@ -94,10 +95,15 @@ footer nav ul {
    grid-column: span 2;
 }
 
+
 /* text styling */
 
 .logo-text, h1, h2, h3, h4, h5, h6 {
    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+   font-size: 2rem;
 }
 
 .logo-text {
@@ -108,11 +114,13 @@ footer nav ul {
 
 p {
    line-height: 1.618;
+   color: #3a3a3a;
 }
 
 li {
    line-height: 1.618;
    margin-bottom: 0.5rem;
+   color: #3a3a3a;
 }
 
 section {
