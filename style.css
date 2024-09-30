@@ -7,17 +7,32 @@
    box-sizing: border-box;
 }
 
+*:active > * {
+   outline: solid 1px red;
+}
+
+*:active > *:where(div){
+   background-color: rgb(249, 199, 206);
+}
+
+*:active > *:where(h1), 
+*:active > *:where(h2)
+{
+   background-color: lightgreen;
+}
+
+
 
 body {
    font-family: 'Roboto Slab', serif;
-   background: #fafafa;
+   background-color: #f6f6f6;
    margin: 0;
    font-size: 1.125em;
 }
 
 header, footer {
   
-   background: hotpink;
+   background-color: hotpink;
    padding: .2rem 2rem;
 }
 
@@ -60,9 +75,6 @@ nav {
    margin-inline: auto;
 } 
 
-.grid-layout > div {
-   margin-bottom: 2rem;
-}
 
 footer {
    height: 30vh;
@@ -93,6 +105,11 @@ footer nav ul {
    grid-column: span 2;
 }
 
+.center {
+   display: grid;
+   place-items: center;
+}
+
 
 /* text styling */
 
@@ -111,7 +128,6 @@ h1 {
 }
 
 p {
-   
    line-height: 1.618;
    color: #3a3a3a;
 }
@@ -128,7 +144,7 @@ li {
    color: #3a3a3a;
 }
 
-section {
+article {
    margin-bottom: 6rem;
 }
 
@@ -149,25 +165,39 @@ img {
 
 /* link styling */
 
-a:link, a:visited {
-   color: white;
+.nav-link:link, a:visited {
+   color: #f6f6f6;
    font-weight: 500;
-   text-decoration: none;
+   text-decoration-color: transparent;
    font-size: 1.125rem;
+   text-underline-offset: 0.3rem;
+   transition: text-decoration-color 250ms ease-in-out;
    
 }
 
-a:hover {
-   color: rgb(45, 25, 226);
+.nav-link:hover {
+   color: white;
+   text-decoration-color: #f6f6f6;
+  
+   
+}
+
+.nav-link:active {
+   color: darkblue;
+
+}
+
+.inline-link:link, .inline-link:visited{
+   color: rgb(236, 47, 142);
    text-decoration: underline;
-   
-}
-
-a:active {
-   color: rgb(59, 9, 105);
+   text-decoration-style: dotted;
+   text-underline-offset: 0.3rem;
+   text-decoration-color: rgb(236, 47, 142);
 
 }
 
-.inline-link, .inline-link:visited{
-   color:darksalmon;
+.inline-link:hover {
+   color: hotpink;
+ 
+   text-decoration-style: solid;
 }
