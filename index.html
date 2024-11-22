@@ -15,6 +15,9 @@
    <link rel="stylesheet" href="style.css">
 
    <title>Flex &amp; Grid</title>
+
+   <meta name="keywords" content="flex, grid, css grid, flexbox">
+   <meta name="description" content="Vi lär er flex på ett bra sätt.">
 </head>
 
 <body>
@@ -36,7 +39,7 @@
       <article class="grid-layout">
          <h1 class="grid-col-span-2 center">Ska jag använda Flexbox eller CSS Grid?</h1>
          <div>
-            <p>
+            <p class="bold">
                Flexbox och CSS Grid är två metoder för att bygga upp en layout med CSS. De jämförs ofta med varandra,
                trots att det är ganska stor skillnad mellan Flexbox och CSS Grid. I den här artikeln delar jag med mig
                av fördelar och nackdelar med de båda metoderna. <a class="inline-link"
@@ -45,11 +48,11 @@
             <h2>För- &amp; nackdelar med Flexbox</h2>
             <ul>
                <li>
-                  Flexbox är bra för att strukturera innehållet (rubriker, stycken, länkar m.m.) i olika element
+                  <strong>Flexbox</strong> är bra för att strukturera innehållet (rubriker, stycken, länkar m.m.) i olika element
                   (containers, sidhuvud, brödtext, m.m.)
                </li>
                <li>
-                  Bra för endimensionella element, det vill säga element som ska riktas åt ett håll. Flexbox bör användas om man vill skapa element som antingen är på en rad eller i en spalt
+                  Bra för <span class="italic">endimensionella element</span>, det vill säga element som ska riktas åt ett håll. Flexbox bör användas om man vill skapa <span class="highlight">element</span> som antingen är på en rad eller i en spalt
                </li>
                <li>Flexbox är inte det bästa valet för tvådimensionella element</li>
                <li>Med Flexbox skriver man mindre kod än med CSS Grid</li>
@@ -62,7 +65,7 @@
          <div>
             <h2>För- &amp; nackdelar med CSS Grid</h2>
             <p>
-               CSS Grid kan vara förvirrande på grund av dess tvådimensionalitet som du kan påverka med CSS-egenskaperna
+               <em>CSS Grid</em> kan vara förvirrande på grund av dess tvådimensionalitet som du kan påverka med CSS-egenskaperna
                grid-column och grid-row. Jag brukar tänka så här:
             </p>
             <ul>
