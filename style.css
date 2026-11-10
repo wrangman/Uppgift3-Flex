@@ -36,6 +36,10 @@ header, footer {
    padding: .2rem 2rem;
 }
 
+article header {
+   background-color: transparent;
+}
+
 nav {
    display: flex;
    gap: 1.5rem;
