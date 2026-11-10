@@ -7,7 +7,7 @@
    box-sizing: border-box;
 }
 
-*:active > * {
+/* *:active > * {
    outline: solid 1px red;
 }
 
@@ -19,12 +19,12 @@
 *:active > *:where(h2)
 {
    background-color: lightgreen;
-}
+} */
 
 
 
 body {
-   font-family: 'Roboto Slab', serif;
+   font-family: sans-serif;
    background-color: #f6f6f6;
    margin: 0;
    font-size: 1.125em;
